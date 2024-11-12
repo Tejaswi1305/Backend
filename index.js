@@ -8,7 +8,7 @@ const studentRoutes = require('./routes/studentRoutes');
 
 const app = express();
 
-app.use(cors());
+app.use(cors(origin: '*'));
 app.use(express.json());
 
 // Connect to MongoDB using the connection string from environment variables
